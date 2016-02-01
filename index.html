@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html manifest="http://www.codewizard.us/mobileAppTester.appcache">
+
+<head> 
+	<title>CO Location Game</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 		
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+	<link rel="stylesheet" href="css/stylesheet.css" />
+	<script type="text/javascript" src="jquery/jquery.min.js"></script>
+<!--	<script type="text/javascript" src="jquery/jquery.mob.min.js"></script>-->
+	<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+	
+<body> 
+<div data-role="page" id="cogame">
+	<div data-role="header" data-position="fixed">
+		<a href="javascript:history.go(-1)">Back</a>
+		<h1>CO Location Game</h1>
+		<a href="#home">Home</a>
+	</div>
+
+	<div data-role="content">
+        <h2>See if you can identify where you are in CO</h2>
+        <h3>Choose your difficulty level</h3>
+        <div>
+            <a id="1" data-role="button" data-inline="true" onclick="setDiff1();">1</a>
+            <a id="2" data-role="button" data-inline="true" onclick="setDiff2();">2</a>
+            <a id="3" data-role="button" data-inline="true" onclick="setDiff3();">3</a>
+            <a id="4" data-role="button" data-inline="true" onclick="setDiff4();">4</a>
+            <a id="5" data-role="button" data-inline="true" onclick="setDiff5();">5</a>
+        </div>
+		<input id="latlong" type="button" class="bigButton" value="Get Random CO Location" onclick="getLoc();"> 
+		<div id="map_canvas" style="width: 300px; height: 300px;border: 1px solid black;">
+		</div>
+	<script type="text/javascript" src="js/cogame.js" ></script>
+	</div> 
+
+	<div data-role="footer" data-position="fixed" data-mini="true">
+		<p>&#169; Mike McGuire 2015</p>
+	</div>
+</div>
+</body>
+</html>
+	

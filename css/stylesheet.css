@@ -1,0 +1,41 @@
+
+.ui-page
+    {
+    background:#a28952;
+    }
+.bold 
+	{
+	font-weight:bold;
+	}
+.ui-btn 
+	{
+    background: #1a3148; 
+	}
+.ui-btn-inner 
+	{
+    color: #a28952;
+	}
+#insultbutton
+	{
+	margin-top: 25px;
+	}
+#button
+	{
+	margin-top: 15px;
+	}
+#map_canvas
+    {
+    margin: 0 auto 0 auto;
+    margin-top: 20px;
+    }
+div
+	{
+    text-align: center;	
+	}
+h1, h2, h3
+	{
+    color: #1a3148; 
+	}
+
+
+
